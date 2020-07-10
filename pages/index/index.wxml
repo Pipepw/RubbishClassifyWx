@@ -3,7 +3,7 @@
 	<view class="search">
 		<navigator url="/pages/search/search" class="input">
 			<van-icon name="search" />
-			<text class="txt">商品搜索, 共{{goodsCount}}款好物</text>
+			<text class="txt">搜索</text>
 		</navigator>
 	</view>
 
@@ -20,6 +20,16 @@
 		</swiper-item>
 	</swiper>
 	<view class="choice">
+		<view class="button">
+			<view>
+				<view class="recycle">
+					<text>可回收物</text>
+				</view>
+				<view class="kitch">
+					<text>餐厨垃圾</text>
+				</view>
+			</view>
+		</view>
 		<view class="choice1">
 			<view class="order">
 				<view id="orderImg">
@@ -46,6 +56,16 @@
 					<image src='../../static/images/上门.png'></image>
 				</view>
 				<view id="upperText">上门回收</view>
+			</view>
+		</view>
+		<view class="button">
+			<view>
+				<view class="harmful">
+					<text>有害垃圾</text>
+				</view>
+				<view class="other">
+					<text>其他垃圾</text>
+				</view>
 			</view>
 		</view>
 	</view>
