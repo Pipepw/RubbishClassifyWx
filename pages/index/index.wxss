@@ -1,0 +1,138 @@
+/**index.wxss**/
+.container{
+  background: rgb(245, 245, 245);
+}
+
+.banner {
+  width: 750rpx;
+  height: 417rpx;
+}
+
+.banner image {
+  width: 100%;
+  height: 417rpx;
+}
+
+
+.search {
+  height: 88rpx;
+  width: 100%;
+  padding: 0 30rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.search .van-icon-search {
+  line-height: 59rpx;
+}
+
+.search .input {
+  width: 690rpx;
+  height: 56rpx;
+  background: #ededed;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search .txt {
+  height: 42rpx;
+  line-height: 42rpx;
+  color: #666;
+  padding-left: 10rpx;
+  font-size: 30rpx;
+}
+
+.choice {
+  flex-direction: row;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  /* background-image: url("https://raw.githubusercontent.com/Pipepw/FigureBed/master/blog_files/img/PicGo-Github-PicBed/%E5%9B%9B%E6%A0%BC.png"); */
+}
+
+.order {
+  height: 300rpx;
+  width: 300rpx;
+  margin: 50rpx 10rpx 10rpx 60rpx;
+  background: #fff;
+}
+
+.photo {
+  height: 300rpx;
+  width: 300rpx;
+  background-size: 250rpx;
+  margin: 17rpx 10rpx 10rpx 60rpx;
+  background: #fff;
+}
+
+.used {
+  height: 300rpx;
+  width: 300rpx;
+  background-size: 250rpx;
+  margin: 50rpx 10rpx 10rpx 10rpx;
+  background: #fff;
+}
+
+.upper {
+  height: 300rpx;
+  width: 300rpx;
+  background-size: 250rpx;
+  margin: 17rpx 10rpx 10rpx 10rpx;
+  background: #fff;
+}
+
+#photoImg image {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 20rpx 0rpx 0rpx 50rpx;
+}
+
+#photoText {
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#orderImg image {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 20rpx 0rpx 0rpx 50rpx;
+}
+
+#orderText {
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#usedImg image {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 20rpx 0rpx 0rpx 50rpx;
+}
+
+#usedText {
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#upperImg image {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 20rpx 0rpx 0rpx 50rpx;
+}
+
+#upperText {
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
