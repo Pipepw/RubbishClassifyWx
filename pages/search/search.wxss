@@ -316,3 +316,36 @@ page {
   text-align: center;
   color: #999;
 }
+
+.search-result-view{
+  width: max-content;
+  height: content;
+}
+
+.rubbish-boo{
+  display: flex;
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.rubbish-name{
+  font-size: 50rpx;
+  margin: 100rpx 0rpx 0rpx 50rpx;
+  width: 200rpx;
+  height: 200rpx;
+  font-weight: bold;
+}
+
+.rubbish-kind{
+  font-size: 50rpx;
+  margin: 200rpx 0rpx 0rpx -200rpx;
+  width: 200rpx;
+  height: 200rpx;
+  font-weight: bold;
+}
+
+.rubbish-image{
+  width: 300rpx;
+  height: 300rpx;
+  margin: -1000rpx 0rpx 0rpx 400rpx;
+}

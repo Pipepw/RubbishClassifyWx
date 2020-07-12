@@ -6,7 +6,7 @@ Page({
   data: {
     keywrod: '',
     searchStatus: false,
-    goodsList: [],
+    rubbishesList: [],
     helpKeyword: [],
     historyKeyword: [],
     categoryFilter: false,
@@ -18,7 +18,10 @@ Page({
     hotKeyword: [],
     page: 1,
     limit: 20,
-    categoryId: 0
+    categoryId: 0,
+    rubbishName: "巴旦木壳",
+    rubbishKind: "可回收物",
+    rubbishImage: "../../static/images/recyc1.png"
   },
   //事件处理函数
   closeSearch: function() {
@@ -50,7 +53,7 @@ Page({
 
   inputChange: function(e) {
     this.setData({
-      keyword: e.detail.value,
+      keyword: e.detail.value,  //获取输入的值到keyword中，然后我应该把数组展示出来
       searchStatus: false
     });
 
@@ -73,7 +76,7 @@ Page({
   inputFocus: function() {
     this.setData({
       searchStatus: false,
-      goodsList: []
+      rubbishesList: []
     });
 
     if (this.data.keyword) {
@@ -90,9 +93,9 @@ Page({
         console.log('清除成功');
       });
   },
-  getGoodsList: function() {
+  getrubbishesList: function() {
     let that = this;
-    util.request(api.GoodsList, {
+    util.request(api.rubbishesList, {
       keyword: that.data.keyword,
       page: that.data.page,
       limit: that.data.limit,
@@ -104,7 +107,7 @@ Page({
         that.setData({
           searchStatus: true,
           categoryFilter: false,
-          goodsList: res.data.list,
+          rubbishesList: res.data.list,
           filterCategory: res.data.filterCategoryList
         });
       }
@@ -126,70 +129,12 @@ Page({
       keyword: keyword,
       page: 1,
       categoryId: 0,
-      goodsList: []
+      rubbishesList: []
     });
 
-    this.getGoodsList();
+    this.getrubbishesList();
   },
-  openSortFilter: function(event) {
-    let currentId = event.currentTarget.id;
-    switch (currentId) {
-      case 'categoryFilter':
-        this.setData({
-          categoryFilter: !this.data.categoryFilter,
-          currentSortType: 'category',
-          currentSort: 'add_time',
-          currentSortOrder: 'desc'
-        });
-        break;
-      case 'priceSort':
-        let tmpSortOrder = 'asc';
-        if (this.data.currentSortOrder == 'asc') {
-          tmpSortOrder = 'desc';
-        }
-        this.setData({
-          currentSortType: 'price',
-          currentSort: 'retail_price',
-          currentSortOrder: tmpSortOrder,
-          categoryFilter: false
-        });
-
-        this.getGoodsList();
-        break;
-      default:
-        //综合排序
-        this.setData({
-          currentSortType: 'default',
-          currentSort: 'name',
-          currentSortOrder: 'desc',
-          categoryFilter: false,
-          categoryId: 0,
-        });
-        this.getGoodsList();
-    }
-  },
-  selectCategory: function(event) {
-    let currentIndex = event.target.dataset.categoryIndex;
-    let filterCategory = this.data.filterCategory;
-    let currentCategory = null;
-    for (let key in filterCategory) {
-      if (key == currentIndex) {
-        filterCategory[key].selected = true;
-        currentCategory = filterCategory[key];
-      } else {
-        filterCategory[key].selected = false;
-      }
-    }
-    this.setData({
-      filterCategory: filterCategory,
-      categoryFilter: false,
-      categoryId: currentCategory.id,
-      page: 1,
-      goodsList: []
-    });
-    this.getGoodsList();
-  },
-  onKeywordConfirm(event) {
+  onKeywordConfirm(event) { //确认搜索之后在这里，参数是我确定的值
     this.getSearchResult(event.detail.value);
   }
 })
