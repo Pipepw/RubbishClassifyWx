@@ -42,7 +42,7 @@ Page({
           topics: res.data.topicList,
           brands: res.data.brandList,
           floorGoods: res.data.floorGoodsList,
-          banner: res.data.banner,
+          banner: ["../../static/images/滚动1.jpg","../../static/images/滚动2.jpg","../../static/images/滚动3.jpg"],
           groupons: res.data.grouponList,
           channel: res.data.channel,
           coupon: res.data.couponList
@@ -62,7 +62,6 @@ Page({
       //这个scene的值存在则证明首页的开启来源于朋友圈分享的图,同时可以通过获取到的goodId的值跳转导航到对应的详情页
       var scene = decodeURIComponent(options.scene);
       console.log("scene:" + scene);
-
       let info_arr = [];
       info_arr = scene.split(',');
       let _type = info_arr[0];
