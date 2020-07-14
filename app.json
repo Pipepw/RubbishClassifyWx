@@ -30,7 +30,7 @@
         "pagePath": "pages/catalog/catalog",
         "iconPath": "static/images/category.png",
         "selectedIconPath": "static/images/category@selected.png",
-        "text": "答题界面"
+        "text": "答题"
       },
       {
         "pagePath": "pages/ucenter/index/index",
