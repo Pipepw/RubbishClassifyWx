@@ -30,13 +30,13 @@
         "pagePath": "pages/catalog/catalog",
         "iconPath": "static/images/category.png",
         "selectedIconPath": "static/images/category@selected.png",
-        "text": "答题"
+        "text": "答题界面"
       },
       {
         "pagePath": "pages/ucenter/index/index",
         "iconPath": "static/images/my.png",
         "selectedIconPath": "static/images/my@selected.png",
-        "text": "个人中心"
+        "text": "个人"
       }
     ]
   },
