@@ -322,6 +322,12 @@ page {
   height: content;
 }
 
+.search-result-head{
+  background: #fff;
+  height: 400rpx;
+  width: 750rpx;
+}
+
 .rubbish-boo{
   display: flex;
   width: 300rpx;
@@ -348,4 +354,65 @@ page {
   width: 300rpx;
   height: 300rpx;
   margin: -1000rpx 0rpx 0rpx 400rpx;
+}
+
+.rubbish-body{
+  width: 600rpx;
+  height: 700rpx;
+  margin: 10rpx 0rpx 0rpx 0rpx;
+}
+
+.mov{
+  margin: 0rpx 0rpx 0rpx 75rpx;
+}
+
+.explain-back{
+  width: 750rpx;
+  background: #fff;
+}
+
+.explain-head{
+  width: 500rpx;
+}
+.explain-head text{
+  font-size: 50rpx;
+  margin: 100rpx 0rpx 0rpx 50rpx;
+  font-weight: bold;
+}
+
+.explain-text{
+  text-indent: 50rpx;
+  width: 500rpx;
+  height: 200rpx;
+  margin: 50rpx 0rpx 0rpx 50rpx;
+}
+.explain-text text{
+  font-size: 35rpx;
+}
+
+.suggestion-back{
+  width: 750rpx;
+  background: #fff;
+}
+
+.suggestion-head{
+  width: 500rpx;
+  margin: 10rpx 0rpx 0rpx 0rpx;
+}
+
+.suggestion-head text{
+  font-size: 50rpx;
+  margin: 100rpx 0rpx 0rpx 50rpx;
+  font-weight: bold;
+}
+
+.suggestion-text{
+  text-indent: 50rpx;
+  width: 500rpx;
+  height: 200rpx;
+  margin: 50rpx 0rpx 0rpx 50rpx;
+}
+
+.suggestion-text text{
+  font-size: 35rpx;
 }

@@ -20,7 +20,11 @@ Page({
     limit: 20,
     categoryId: 0,
     rubbishName: "巴旦木壳",
-    rubbishKind: "可回收物",
+    rubbishKind: "餐厨垃圾",
+    explainHead: "解释",
+    explainBody: "餐厨垃圾是指易腐的生物质废弃物，包括剩菜、果壳、绿植、碎骨以及日常食品等",
+    suggestionHead: "投放建议",
+    suggestionBody: "纯流质如奶粥汤酒等可直接导入下水道，有包装物的餐厨垃圾应将包装物取出后分类投放",
     rubbishImage: "../../static/images/recyc1.png"
   },
   //事件处理函数
@@ -43,9 +47,9 @@ Page({
     util.request(api.SearchIndex).then(function(res) {
       if (res.errno === 0) {
         that.setData({
-          historyKeyword: res.data.historyKeywordList,
-          defaultKeyword: res.data.defaultKeyword,
-          hotKeyword: res.data.hotKeywordList
+          // historyKeyword: res.data.historyKeywordList,
+          // defaultKeyword: res.data.defaultKeyword,
+          // hotKeyword: res.data.hotKeywordList
         });
       }
     });
@@ -63,15 +67,15 @@ Page({
   },
   getHelpKeyword: function() {
     let that = this;
-    util.request(api.SearchHelper, {
-      keyword: that.data.keyword
-    }).then(function(res) {
-      if (res.errno === 0) {
-        that.setData({
-          helpKeyword: res.data
-        });
-      }
-    });
+    // util.request(api.SearchHelper, {
+    //   keyword: that.data.keyword
+    // }).then(function(res) {
+    //   if (res.errno === 0) {
+    //     that.setData({
+    //       helpKeyword: res.data
+    //     });
+    //   }
+    // });
   },
   inputFocus: function() {
     this.setData({
@@ -88,33 +92,33 @@ Page({
       historyKeyword: []
     })
 
-    util.request(api.SearchClearHistory, {}, 'POST')
-      .then(function(res) {
-        console.log('清除成功');
-      });
+    // util.request(api.SearchClearHistory, {}, 'POST')
+    //   .then(function(res) {
+    //     console.log('清除成功');
+    //   });
   },
   getrubbishesList: function() {
-    let that = this;
-    util.request(api.rubbishesList, {
-      keyword: that.data.keyword,
-      page: that.data.page,
-      limit: that.data.limit,
-      sort: that.data.currentSort,
-      order: that.data.currentSortOrder,
-      categoryId: that.data.categoryId
-    }).then(function(res) {
-      if (res.errno === 0) {
-        that.setData({
-          searchStatus: true,
-          categoryFilter: false,
-          rubbishesList: res.data.list,
-          filterCategory: res.data.filterCategoryList
-        });
-      }
+    // let that = this;
+    // util.request(api.rubbishesList, {
+    //   keyword: that.data.keyword,
+    //   page: that.data.page,
+    //   limit: that.data.limit,
+    //   sort: that.data.currentSort,
+    //   order: that.data.currentSortOrder,
+    //   categoryId: that.data.categoryId
+    // }).then(function(res) {
+    //   if (res.errno === 0) {
+    //     that.setData({
+    //       searchStatus: true,
+    //       categoryFilter: false,
+    //       rubbishesList: res.data.list,
+    //       filterCategory: res.data.filterCategoryList
+    //     });
+      // }
 
       //重新获取关键词
-      that.getSearchKeyword();
-    });
+      // that.getSearchKeyword();
+    // });
   },
   onKeywordTap: function(event) {
 

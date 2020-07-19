@@ -35,11 +35,41 @@
 		<view class="search-suggestion">
 		</view>
 		<view class="search-result-view">
-			<view class="rubbish-boo">
-				<text class="rubbish-name">{{rubbishName}}</text>
-				<text class="rubbish-kind">{{rubbishKind}}</text>
+			<view class="search-result-head">
+				<view class="rubbish-boo">
+					<text class="rubbish-name">{{rubbishName}}</text>
+					<text class="rubbish-kind">{{rubbishKind}}</text>
+				</view>
+				<image class="rubbish-image" src="{{rubbishImage}}"></image>
 			</view>
-			<image class="rubbish-image" src="{{rubbishImage}}"></image>
+
+			<view class="rubbish-body">
+				<view class="explain-back">
+					<view class="mov">
+						<view class="explain-head">
+							<text>{{explainHead}}\n</text>
+						</view>
+						<view class="explain-text">
+							<text class="explain-body">{{explainBody}}\n</text>
+						</view>
+					</view>
+				</view>
+
+				<view class="suggestion-back">
+					<view class="mov">
+						<view class="suggestion-head">
+							<text>{{suggestionHead}}\n</text>
+						</view>
+						<view class="suggestion-text">
+							<text class="suggestion-body">{{suggestionBody}}\n</text>
+						</view>
+					</view>
+				</view>
+
+
+
+			</view>
+
 		</view>
 	</view>
 </scroll-view>
