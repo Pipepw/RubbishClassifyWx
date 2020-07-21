@@ -1,1 +1,6 @@
 /* pages/catalog/catalog.wxss */
+button{
+  width: 100%;
+  background-color: #00ccff;
+  margin-top: 20rpx;
+}

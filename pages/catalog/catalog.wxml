@@ -1,2 +1,2 @@
 <!--pages/catalog/catalog.wxml-->
-<text>pages/catalog/catalog.wxml</text>
+<button class="start_question" bindtap="start_question">开始答题</button>

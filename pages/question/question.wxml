@@ -1,0 +1,23 @@
+<!--pages/question/question.wxml-->
+<view class="content">
+	<!--题目-->
+  <view class="question_type">[单选]</view>
+	<view class="question_title"> {{index+1}}.{{datas[index].title}}</view>
+	<!--选项-->
+	<radio-group bindchange='radioChange'>
+    <label class="radio">
+     <radio value="1"></radio><text class="select_item">{{datas[index].optionA}}</text>
+    </label>
+    <label class="radio">
+     <radio value="2"></radio><text class="select_item">{{datas[index].optionB}}</text>
+    </label>
+    <label class="radio">
+     <radio value="3"></radio><text class="select_item">{{datas[index].optionC}}</text>
+    </label>
+    <label class="radio">
+     <radio value="4"></radio><text class="select_item">{{datas[index].optionD}}</text>
+    </label>
+	</radio-group>
+</view>
+
+<button class="next_question" bindtap="btnNextQuestiion">下一题</button>

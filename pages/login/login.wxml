@@ -1,0 +1,30 @@
+<!--pages/login/login.wxml-->
+<image class="logo" src="/static/icon/见圾行事logo.png"></image>
+
+<view class="content">
+	<!--表单-->
+	<form>
+		<!--手机号-->
+		<view class="form-row-key">手机号</view>
+		<view class="form-row-value">
+			<input type="text" placeholder="请输入手机号"></input>
+		</view>
+    <view class="line"></view>
+
+		<!--密码-->
+		<view class="form-row-key">密码</view>
+		<view class="form-row-value">
+			<input type="text" placeholder="请输入密码"></input>
+		</view>
+    <view class="line"></view>
+		<!--按钮-->
+		<view class="btn_login">
+			<button >登陆</button>
+		</view>
+	</form>
+</view>
+
+<!--注册跳转-->
+<view class="to_register">
+	<button>立即注册</button>
+</view>

@@ -1,4 +1,4 @@
-// pages/catalog/catalog.js
+// pages/result/questionresult.js
 Page({
 
   /**
@@ -62,11 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  start_question:function(){
-    //跳转到答题页面
-    wx.redirectTo({
-      url: '/pages/question/question',
-    })
   }
 })

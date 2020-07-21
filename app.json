@@ -4,7 +4,10 @@
     "pages/catalog/catalog",
     "pages/cart/cart",
     "pages/ucenter/index/index",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/login/login",
+    "pages/question/question",
+    "pages/result/questionresult"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",

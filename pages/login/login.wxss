@@ -1,0 +1,45 @@
+/* 设置登录页面的样式 */
+page{
+  /*弹性布局*/
+  display: flex;
+  flex-direction: column;/*布局元素排列方向*/
+  align-items: center;/*垂直居中*/
+}
+/*登陆页面的logo*/
+.logo{
+  width: 400rpx;
+  height: 200rpx;
+  margin: 30rpx;
+}
+/*content区域*/
+.content{
+  width: 90%;
+  margin-top: 30rpx;
+}
+/*表单*/
+.form-row-key{
+  float: left;/*浮动*/
+}
+.form-row-value{
+  float: right;
+}
+/*分割线*/
+.line{
+  width: 100%;
+  height: 5rpx;
+  float: left;
+  background-color: #f1f1f1;
+  margin: 8rpx;
+}
+/*表单中的按钮*/
+button{
+  width: 100%;
+  background-color: #00ccff;
+  margin-top: 20rpx;
+}
+
+
+.to_register{
+  width: 90%;
+  margin-top: 30rpx;
+}

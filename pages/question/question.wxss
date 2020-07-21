@@ -1,0 +1,25 @@
+/* pages/question/question.wxss */
+.question_title{
+  margin-top: 20rpx;
+  padding-left: 15rpx;
+  margin-bottom: 20rpx;
+}
+
+.question_type{
+  color:deepskyblue ;
+  float: left;
+}
+
+.radio{
+  padding: 20rpx;
+  display: block;
+}
+button{
+  width: 90%;
+  background-color: deepskyblue;
+  margin-top: 50rpx;
+}
+
+.select_item{
+  color: #919191;
+}
