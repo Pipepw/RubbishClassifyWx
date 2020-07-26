@@ -1,13 +1,18 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/catalog/catalog",
-    "pages/cart/cart",
-    "pages/ucenter/index/index",
     "pages/search/search",
-    "pages/login/login",
-    "pages/question/question",
-    "pages/result/questionresult"
+    "pages/answer/answer",
+    "pages/ucenter/index/index",
+    "pages/ucenter/BasicInformationPage/BasicInformationPage",
+    "pages/ucenter/OrderManagementPage/OrderDetailsPage/OrderDetailsPage",
+    "pages/ucenter/OrderManagementPage/OrderManagementPage",
+    "pages/ucenter/SystemSetupPage/SystemSetupPage",
+    "pages/ucenter/BasicInformationPage/InputPage/InputPage",
+    "pages/ucenter/SystemSetupPage/SuggestionsPage/SuggestionsPage",
+    "pages/ucenter/AddressPage/directory",
+    "pages/ucenter/SystemSetupPage/AboutUsPage/AboutUsPage",
+    "pages/catalog/catalog"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",
@@ -50,7 +55,6 @@
     "downloadFile": 10000
   },
   "debug": true,
-  "usingComponents": {
-  },
+  "usingComponents": {},
   "sitemapLocation": "sitemap.json"
 }

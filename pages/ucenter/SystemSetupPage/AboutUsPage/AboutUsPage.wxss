@@ -4,10 +4,24 @@
     /*垂直方向 列方向 排布*/
     flex-direction:column;
     /*居中*/
-    /*align-items:center;*/
-    /*要从整体解决排布的问题是最好的方案*/ 
+    align-items:center;
+    width: 100%;
+   
+    
 }
-
+.lastlayout{
+  width: 100%;
+  height: 300rpx;
+  background: white;
+}
+.lasttext{
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   font-size: 30rpx;
+   color: #DCDCDC;
+  
+}
 .firstlayout{
    /*弹性模型*/
     display:flex;
@@ -18,20 +32,19 @@
     /*要从整体解决排布的问题是最好的方案*/ 
     width: 100%;
     height: 400rpx;
-    background: #708090;
+    background: #fafafa;
+    justify-content: center;
 }
 
 .firstimagestyle{
   width: 180rpx;
   height: 180rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-  border:3px solid #FFFFFF;
+  border-radius: 20%;
 }
 
 .firstfontstyle{
+  margin-top: 20rpx;
  font-size:34rpx;
- color: #FFFFFF;
 }
 
 .secondlayout{
@@ -77,6 +90,8 @@
   width:50%;
   height: 100%;
   text-align:right;
+  margin-top: 46rpx;
+  margin-right: 20rpx;
 }
 .thirdimagestyle{
   width: 60rpx;
