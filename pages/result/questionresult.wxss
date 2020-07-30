@@ -1,1 +1,23 @@
 /* pages/result/questionresult.wxss */
+page{
+  /*弹性布局*/
+  display: flex;
+  flex-direction: column;/*布局元素排列方向*/
+  align-items: center;/*垂直居中*/
+}
+
+.logo{
+  width: 400rpx;
+  height: 400rpx;
+
+  align-items: center;
+}
+
+text{
+  color: gray;
+  font-size: medium;
+}
+
+button{
+  margin-top: 50rpx;
+}

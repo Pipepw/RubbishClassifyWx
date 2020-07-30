@@ -1,0 +1,36 @@
+<!--pages/questiondetail/questiondetail.wxml-->
+<!--滑块组件-->
+<view class="content">
+	<swiper class="swiper-item" indicator-dots="true">
+		<view wx:for="{{index}}">
+			<swiper-item>
+				<text class="tips">您选择的答案</text><!--用户选择的答案-->
+				<view class='question-result'>【{{userselect[item-1].select}}】</view>
+				<!--题目详情-->
+				<view class='question-title'>{{questiondatas[item-1].title}}</view>
+				<!--历史选项-->
+				<radio-group bindchange='radioChange'>
+					<label class="radio" >
+						<radio value="A"></radio><text class="select_item">{{questiondatas[item-1].optionA}}</text>
+					</label>
+					<label class="radio">
+						<radio value="B"></radio><text class="select_item">{{questiondatas[item-1].optionB}}</text>
+					</label>
+					<label class="radio">
+						<radio value="C"></radio><text class="select_item">{{questiondatas[item-1].optionC}}</text>
+					</label>
+					<label class="radio">
+						<radio value="D"></radio><text class="select_item">{{questiondatas[item-1].optionD}}</text>
+					</label>
+				</radio-group>
+        <!--正确答案-->
+				<view>
+          <text class="tips">正确答案：</text>
+					<text class='right-answer'>【{{questiondatas[item-1].answer}}】</text>
+				</view>
+			</swiper-item>
+		</view>
+	</swiper>
+</view>
+<!--返回开始答题页面-->
+<button bindtap="exitQuestion">退出</button>

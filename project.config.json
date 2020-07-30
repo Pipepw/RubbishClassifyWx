@@ -24,7 +24,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
@@ -314,16 +314,44 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/login/login",
+					"id": 42,
+					"name": "登录",
 					"pathName": "pages/login/login",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/question/question",
+					"id": 43,
+					"name": "答题",
 					"pathName": "pages/question/question",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "答题结果",
+					"pathName": "pages/result/questionresult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "答题详情",
+					"pathName": "pages/questiondetail/questiondetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拍照",
+					"pathName": "pages/camera/camera",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/popup/popup",
+					"pathName": "pages/popup/popup",
 					"scene": null
 				}
 			]

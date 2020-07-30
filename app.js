@@ -3,6 +3,13 @@ var api = require('./config/api.js');
 var user = require('./utils/user.js');
 
 App({
+  //全局数据，测试题目
+  globalDatas:{
+    questionDatas:null,
+    //考生选取的答案
+    questionAnswer:[{"select":"B"},{"select":"B"},{"select":"B"},{"select":"B"},{"select":"B"}],
+  },
+
   onLaunch: function() {
     const updateManager = wx.getUpdateManager();
     wx.getUpdateManager().onUpdateReady(function() {

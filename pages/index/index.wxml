@@ -1,3 +1,4 @@
+
 <!--index.wxml-->
 <view class="container">
 	<view class="search">
@@ -38,11 +39,11 @@
 				</view>
 				<view id="photoText">预约回收</view>
 			</view>
-			<view class="photo">
+			<view class="photo" bindtap="startCamera">
 				<view id="photoImg">
 					<image src='../../static/images/照片 拍照.png'></image>
 				</view>
-				<view id="photoText">拍照识别</view>
+				<view id="photoText" >拍照识别</view>
 			</view>
 		</view>
 		<view class="choice2">

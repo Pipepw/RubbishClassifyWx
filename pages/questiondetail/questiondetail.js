@@ -1,18 +1,26 @@
-// pages/result/questionresult.js
+// pages/questiondetail/questiondetail.js
+var app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    index:[1,2,3,4,5],
+    questiondatas:null,
+    userselect:null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var currPage=this;
+    console.log(app.globalDatas.questionAnswer);
+    currPage.setData({
+      questiondatas:app.globalDatas.questionDatas,
+      userselect:app.globalDatas.questionAnswer,
+    });
   },
 
   /**
@@ -63,15 +71,11 @@ Page({
   onShareAppMessage: function () {
 
   },
-  //查看考试详情
-  queryResult:function(){
-    //计算总成绩
-
-    //将成绩上传服务器
-
-    //页面的跳转
+  exitQuestion:function(){
+    console.log("exit");
     wx.redirectTo({
-      url: '/pages/questiondetail/questiondetail',
+      url: '/pages/login/login',
     })
   }
+
 })

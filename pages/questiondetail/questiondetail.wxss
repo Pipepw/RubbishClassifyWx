@@ -1,0 +1,32 @@
+/* pages/questiondetail/questiondetail.wxss */
+.radio{
+  padding: 20rpx;
+  display: block;
+}
+.question-result{
+  color: blueviolet;
+  font-weight: bold;
+}
+.tips{
+  font-weight: bold;
+}
+
+.right-answer{
+  color: red;
+  font-weight: bold;
+}
+
+.swiper-item{
+  margin-left: 30rpx;
+}
+.question-title{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-weight: bold;
+}
+
+
+swiper{
+  margin-top: 50rpx;
+  height: 1000rpx;
+}

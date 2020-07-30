@@ -1,3 +1,4 @@
+
 //获取应用实例
 const app = getApp();
 
@@ -32,4 +33,10 @@ Page({
   onUnload: function() {
     // 页面关闭
   },
+  startCamera:function(){
+    wx.navigateTo({
+      url: '/pages/camera/camera',
+    })
+  }
+
 })
