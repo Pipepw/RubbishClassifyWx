@@ -23,12 +23,13 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
+		"bundle": false,
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.0",
+	"libVersion": "2.4.3",
 	"appid": "wxcd859fcb193d6f5a",
 	"projectname": "litemall-wx",
 	"simulatorType": "wechat",

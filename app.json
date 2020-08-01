@@ -1,3 +1,4 @@
+
 {
   "pages": [
     "pages/index/index",
@@ -12,7 +13,12 @@
     "pages/ucenter/SystemSetupPage/SuggestionsPage/SuggestionsPage",
     "pages/ucenter/AddressPage/directory",
     "pages/ucenter/SystemSetupPage/AboutUsPage/AboutUsPage",
-    "pages/catalog/catalog"
+    "pages/catalog/catalog",
+    "pages/login/login",
+    "pages/question/question",
+    "pages/result/questionresult",
+    "pages/questiondetail/questiondetail",
+    "pages/camera/camera"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",

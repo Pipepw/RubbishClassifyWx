@@ -260,6 +260,11 @@ Page({
   _error() {
     console.log('你点击了取消');
     this.popup.hidePopup();
+    var album = this.data.album;
+    wx.previewImage({
+      current: album[album.length > 0 ? album.length -1 : 0],
+      urls: album
+    });
   },
   //确认事件
   _success() {

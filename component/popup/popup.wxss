@@ -36,12 +36,10 @@
   justify-content: space-around;
   margin-bottom: 40rpx;
 }
-.wx-popup-btn text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 88rpx;
-  border: 2rpx solid #ccc;
-  border-radius: 88rpx;
+.btn-no{
+  color: #00BFFF;
 }
+.btn-ok{
+  color: #00BFFF;
+}
+
