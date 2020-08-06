@@ -2,31 +2,39 @@
 .radio{
   padding: 20rpx;
   display: block;
+  font-size: 35rpx;
 }
 .question-result{
   color: blueviolet;
   font-weight: bold;
+  font-size: 35rpx;
 }
 .tips{
   font-weight: bold;
+  font-size: 35rpx;
+  padding-top: 20rpx;
 }
 
 .right-answer{
   color: red;
   font-weight: bold;
+  font-size: 35rpx;
 }
 
 .swiper-item{
   margin-left: 30rpx;
+  font-size: 35rpx;
 }
 .question-title{
   margin-top: 20rpx;
   margin-bottom: 20rpx;
   font-weight: bold;
+  font-size: 35rpx;
 }
 
 
 swiper{
   margin-top: 50rpx;
   height: 1000rpx;
+  font-size: 35rpx;
 }

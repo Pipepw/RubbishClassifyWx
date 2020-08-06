@@ -1,6 +1,7 @@
 <!--pages/result/questionresult.wxml-->
-<image class="logo" src="/static/icon/正确.png"></image>
+<image class="logo" src="/static/icon/earth1.png"></image>
 <view class="content">
+  
   <text>提交成功！如果想查看答题结果，请点击下方的按钮</text>
   <button bindtap="queryResult">查看答题情况</button>
 </view>

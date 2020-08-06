@@ -3,6 +3,7 @@
 	<!--题目-->
   <view class="question_type">[单选]</view>
 	<view class="question_title"> {{index+1}}.{{datas[index].title}}</view>
+  <image mode="aspectFit" class="image_type" src="/static/icon/earth1.png"></image>
 	<!--选项-->
 	<radio-group bindchange='radioChange'>
     <label class="radio">

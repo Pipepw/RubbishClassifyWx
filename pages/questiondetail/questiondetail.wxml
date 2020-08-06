@@ -11,22 +11,27 @@
 				<!--历史选项-->
 				<radio-group bindchange='radioChange'>
 					<label class="radio" >
-						<radio value="A"></radio><text class="select_item">{{questiondatas[item-1].optionA}}</text>
+						<radio value="A" checked="true"  color="#FF3030"></radio><text class="select_item">{{questiondatas[item-1].optionA}}</text>
 					</label>
 					<label class="radio">
-						<radio value="B"></radio><text class="select_item">{{questiondatas[item-1].optionB}}</text>
+						<radio value="B" disabled="true"></radio><text class="select_item">{{questiondatas[item-1].optionB}}</text>
 					</label>
 					<label class="radio">
-						<radio value="C"></radio><text class="select_item">{{questiondatas[item-1].optionC}}</text>
+						<radio value="C" disabled="true"></radio><text class="select_item">{{questiondatas[item-1].optionC}}</text>
 					</label>
 					<label class="radio">
-						<radio value="D"></radio><text class="select_item">{{questiondatas[item-1].optionD}}</text>
+						<radio value="D" disabled="true"></radio><text class="select_item">{{questiondatas[item-1].optionD}}</text>
 					</label>
 				</radio-group>
         <!--正确答案-->
 				<view>
           <text class="tips">正确答案：</text>
 					<text class='right-answer'>【{{questiondatas[item-1].answer}}】</text>
+				</view>
+				<!--解释-->
+				<view>
+					<text class="tips">解释</text>
+					<text class="radio">{{questiondatas[item-1].explain}}</text>
 				</view>
 			</swiper-item>
 		</view>
