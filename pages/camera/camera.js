@@ -6,6 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    rubbishLabel:null,
+    showModalStatus: false,
     canIUseCamera: wx.canIUse('camera'),
     hasCameraScope: true,
     cameraType: "normal", //'normal' or 'square'
@@ -165,6 +167,7 @@ Page({
    * 点击拍照
    */
   shotPhoto: function() {
+    var thispage=this;
     //创建动画实例
     var cameraShoting = wx.createAnimation({
       transformOrigin: "50% 50%",
@@ -193,15 +196,49 @@ Page({
     });
     albumShoting.opacity(0.1).scale(0.1).step();
     albumShoting.opacity(1).scale(1).step();
-
     //获取照片
     const ctx = wx.createCameraContext();
 		ctx.takePhoto({
 			quality: 'high',
 			success: (res) => {
+        //获取图片路径
         var imgUrl = res.tempImagePath;
+        //获取图片信息
+        wx.getImageInfo({
+          src: imgUrl,
+          success: function (res) {
+            console.log("图片大小" + res.width+"*"+res.height)
+          }
+      })
+      // wx.compressImage({
+      //   src: imgUrl,
+      //   quality:60,
+      //   success:function(res){
+      //     imgUrl:res
+      //   }
+      // })
+        //上传图片
+        wx.uploadFile({
+          //服务器ip:106.13.235.119
+          url: 'http://106.13.235.119:8080/model/ModelLoadServlet', //这里写自己的域名
+          filePath: imgUrl,
+          name: 'file',
+          success: function (result) {
+            thispage.popup.showPopup();
+            console.log("返回路径：" + result.data)
+            thispage.setData({
+              rubbishLabel:result.data
+            })
+          },
+          fail:function(result){
+            
+            console.log(imgUrl)
+          }
+        })
         var album = [].concat(this.data.album);
         album.push(imgUrl);
+        // upload(this, imgUrl);
+
         this.setData({
           album: album,
           cameraShotingData: cameraShoting.export(),
@@ -209,7 +246,7 @@ Page({
         });
       }
     })
-    this.popup.showPopup();
+    //this.popup.showPopup();
   },
 
   /**
@@ -260,16 +297,27 @@ Page({
   _error() {
     console.log('你点击了取消');
     this.popup.hidePopup();
-    var album = this.data.album;
-    wx.previewImage({
-      current: album[album.length > 0 ? album.length -1 : 0],
-      urls: album
-    });
+    wx.showToast({
+      title: '上传成功',
+      icon: 'success',
+      duration: 2000
+    })
+    // var album = this.data.album;
+    // wx.previewImage({
+    //   current: album[album.length > 0 ? album.length -1 : 0],
+    //   urls: album
+    // });
   },
   //确认事件
   _success() {
     console.log('你点击了确定');
     this.popup.hidePopup();
-  }
+  },
+  
+  
 
 })
+
+
+   
+

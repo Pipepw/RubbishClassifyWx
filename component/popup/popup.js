@@ -2,7 +2,8 @@ Component({
   
   options: {
     multipleSlots: true, // 在组件定义时的选项中启用多slot支持
-    addGlobalClass:true
+    addGlobalClass:true,
+    showModalStatus: false
   },
   /**
    * 组件的属性列表
@@ -20,7 +21,7 @@ Component({
     // 弹窗取消按钮文字
     btn_no: {
       type: String,
-      value: '取消'
+      value: '识别有误?'
     },
     // 弹窗确认按钮文字
     btn_ok: {

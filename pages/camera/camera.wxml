@@ -41,7 +41,7 @@
 		<!-- 右侧切换前置/后置摄像头按钮 -->
 		<view class="camera-reverse" hover-class="camera-reverse-hover" hover-stop-propagation="false" bindtap="reverseCamera"></view>
 
-		<popup id='popup' title='识别结果' content='可回收垃圾' btn_no='取消' btn_ok='确定' bind:error="_error" bind:success="_success">
+		<popup id='popup' title='识别结果' content="{{rubbishLabel}}" btn_no='识别有误上传' btn_ok='确定' bind:error="_error" bind:success="_success">
 		</popup>
 
 	</view>

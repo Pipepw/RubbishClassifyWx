@@ -3,6 +3,15 @@
   <view class='popup-container'>
     <view class="wx-popup-title">{{title}}</view>
     <view class="wx-popup-con">{{content}}</view>
+    <view class="tips">识别有误时请协助填写以下信息，谢谢！</view>
+     <view class="top grid">
+      <label class="title col-0">垃圾名称</label>
+      <input class="input_base input_h30 col-1" name="rName" ></input>
+    </view>
+    <view class="top grid">
+      <label class="title col-0">垃圾类别</label>
+      <input class="input_base input_h30 col-1" name="mobile" ></input>
+    </view>
     <view class="wx-popup-btn">
       <text class="btn-no" bindtap='_error'>{{btn_no}}</text>
       <text class="btn-ok" bindtap='_success'>{{btn_ok}}</text>

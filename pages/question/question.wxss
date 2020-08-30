@@ -10,6 +10,7 @@
   color:deepskyblue ;
   float: left;
   padding-right: 10rpx;
+  margin-left: 10rpx;
   font-size: 35rpx;
 }
 
