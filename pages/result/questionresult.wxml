@@ -1,7 +1,13 @@
 <!--pages/result/questionresult.wxml-->
+<view class="explain">
+  <text>恭喜您，在本次答题中\n</text>
+  <text>答对题数为</text>
+  <text class="number">{{goal}}</text>
+  <text>获得积分为</text>
+  <text class="number">{{goal*20}}</text>
+</view>
 <image class="logo" src="/static/icon/earth1.png"></image>
 <view class="content">
-  
-  <text>提交成功！如果想查看答题结果，请点击下方的按钮</text>
   <button bindtap="queryResult">查看答题情况</button>
+  <button bindtap="exit">退出</button>
 </view>

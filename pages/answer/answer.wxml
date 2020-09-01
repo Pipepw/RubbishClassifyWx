@@ -1,2 +1,30 @@
-<!--pages/answer/answer.wxml-->
-<text>pages/answer/answer.wxml</text>
+
+<view class="content">
+	<!--题目-->
+  <view class="question_type">[单选]</view>
+	<view class="question_title">图中的物品属于哪一类垃圾</view>
+  <image mode="aspectFit" class="image_type" src="/static/icon/cup.jpg"></image>
+	<!--选项-->
+	<radio-group bindchange='radioChange'>
+    <label class="radio">
+     <radio checked="{{ischecked}}" value="{{datas[index].optionA}}"></radio><text class="select_item">干垃圾</text>
+    </label>
+    <label class="radio">
+     <radio checked="{{ischecked}}" value="{{datas[index].optionB}}"></radio><text class="select_item">可回收垃圾</text>
+    </label>
+    <label class="radio">
+     <radio checked="{{ischecked}}" value="{{datas[index].optionC}}"></radio><text class="select_item">湿垃圾（厨余垃圾）</text>
+    </label>
+    <label class="radio">
+     <radio checked="{{ischecked}}" value="{{datas[index].optionD}}"></radio><text class="select_item">有害垃圾</text>
+    </label>
+	</radio-group>
+</view>
+<view>
+  <view class="inputView">物品名称：
+    <input class="input" name="userName" placeholder="请输入物品名称" 
+    bindinput="userNameInput"/>
+  </view>
+</view>
+
+<button class="next_question" bindtap="btnNextQuestiion">提  交</button>

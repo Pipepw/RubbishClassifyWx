@@ -353,6 +353,13 @@
 					"id": -1,
 					"name": "pages/popup/popup",
 					"pathName": "pages/popup/popup",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "奖励",
+					"pathName": "pages/answer/answer",
 					"scene": null
 				}
 			]

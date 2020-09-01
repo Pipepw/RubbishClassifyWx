@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  btnNextQuestiion:function(){
+    wx.redirectTo({
+      url: '/pages/result/questionresult',
+    })
   }
 })

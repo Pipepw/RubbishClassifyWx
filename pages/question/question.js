@@ -1,7 +1,6 @@
 // pages/question/question.js
 //创建全局变量app
 var app=getApp();
-
 Page({
 
   /**
@@ -9,7 +8,7 @@ Page({
    */
   data: {
     ischecked:false,
-    goal:0,
+    goal:0,//答对的题数
     index:0,//试题编号
     json:null,
     datas:
@@ -21,22 +20,22 @@ Page({
    */
   onLoad: function (options) {
     var currPage=this;//当前页面对象
-    wx.request({
-      url: 'http://106.13.235.119:8080/Server/MyAnswerServlet', //仅为示例，并非真实的接口地址
-      data: {
-        x: '',
-        y: ''
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success (res) {
-        currPage.setData({
-          json:res.data,
-        });
-        console.log(json)
-      }
-    })
+    // wx.request({
+    //   url: 'http://106.13.235.119:8080/Server/MyAnswerServlet', //仅为示例，并非真实的接口地址
+    //   data: {
+    //     x: '',
+    //     y: ''
+    //   },
+    //   header: {
+    //     'content-type': 'application/json' // 默认值
+    //   },
+    //   success (res) {
+    //     currPage.setData({
+    //       json:res.data,
+    //     });
+    //     console.log(json)
+    //   }
+    // })
   },
 
   /**
@@ -91,16 +90,31 @@ Page({
   },
   //下一题按钮回调事件
   btnNextQuestiion:function(){
+    var thispage=this;
         //获取用户选择的选项
     var userAnswer=wx.getStorageSync('result');
     console.log(userAnswer+this.data.index);
+    if(userAnswer==app.globalDatas.questionDatas[this.data.index].answer){
+      thispage.setData({
+        goal:thispage.data.goal+1
+      })
+      console.log(thispage.data.goal)
+    }
+    
     //将用户的选项存储到全局变量中
     app.globalDatas.questionAnswer[this.data.index].select=userAnswer;
 
     var currPage=this;//当前页面对象
     var currIndex=currPage.data.index+1;//下一题的题号
     if(currIndex==5){
+      if(thispage.data.goal>=4){
+        wx.redirectTo({
+          url: '/pages/answer/answer',
+        })
+      }
       //跳转到答题详情
+      app.globalDatas.goal=thispage.data.goal
+      console.log(app.globalDatas.goal)
       wx.redirectTo({
         url: '/pages/result/questionresult',
       })

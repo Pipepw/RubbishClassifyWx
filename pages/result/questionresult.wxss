@@ -13,11 +13,22 @@ page{
   align-items: center;
 }
 
-text{
-  color: gray;
-  font-size: medium;
+.number{
+  font-size: 45rpx;
+  color: blue;
 }
+text{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  color: gray;
+}
+
 
 button{
   margin-top: 50rpx;
+  height: 80rpx;
+  width: 400rpx;
 }
