@@ -9,6 +9,7 @@ Page({
     index:[1,2,3,4,5],
     questiondatas:null,
     userselect:null,
+    userselectbool:null,
   },
 
   /**
@@ -20,6 +21,7 @@ Page({
     currPage.setData({
       questiondatas:app.globalDatas.questionDatas,
       userselect:app.globalDatas.questionAnswer,
+      userselectbool:app.globalDatas.userselectbool,
     });
   },
 

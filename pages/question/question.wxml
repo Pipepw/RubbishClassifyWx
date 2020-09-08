@@ -2,21 +2,21 @@
 <view class="content">
 	<!--题目-->
   <view class="question_type">[单选]</view>
-	<view class="question_title"> {{index+1}}.{{datas[index].title}}</view>
-  <image mode="aspectFit" class="image_type" src="/static/icon/earth1.png"></image>
+	<view class="question_title">({{index+1}}/5) {{datas[index].title}}</view>
+  <image mode="aspectFit" class="image_type" src="{{datas[index].url}}"></image>
 	<!--选项-->
 	<radio-group bindchange='radioChange'>
     <label class="radio">
-     <radio checked="{{ischecked}}" value="{{datas[index].optionA}}"></radio><text class="select_item">{{datas[index].optionA}}</text>
+     <radio checked="{{ischecked}}" value="0"></radio><text class="select_item">{{datas[index].optionA}}</text>
     </label>
     <label class="radio">
-     <radio checked="{{ischecked}}" value="{{datas[index].optionB}}"></radio><text class="select_item">{{datas[index].optionB}}</text>
+     <radio checked="{{ischecked}}" value="1"></radio><text class="select_item">{{datas[index].optionB}}</text>
     </label>
     <label class="radio">
-     <radio checked="{{ischecked}}" value="{{datas[index].optionC}}"></radio><text class="select_item">{{datas[index].optionC}}</text>
+     <radio checked="{{ischecked}}" value="2"></radio><text class="select_item">{{datas[index].optionC}}</text>
     </label>
     <label class="radio">
-     <radio checked="{{ischecked}}" value="{{datas[index].optionD}}"></radio><text class="select_item">{{datas[index].optionD}}</text>
+     <radio checked="{{ischecked}}" value="3"></radio><text class="select_item">{{datas[index].optionD}}</text>
     </label>
 	</radio-group>
 </view>

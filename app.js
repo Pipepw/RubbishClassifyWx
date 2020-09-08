@@ -8,6 +8,7 @@ App({
     questionDatas:null,
     //考生选取的答案
     questionAnswer:[{"select":"B"},{"select":"B"},{"select":"B"},{"select":"B"},{"select":"B"}],
+    userselectbool:[],
     goal:0,
   },
 

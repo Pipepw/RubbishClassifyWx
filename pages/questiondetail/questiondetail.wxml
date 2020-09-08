@@ -2,36 +2,36 @@
 <!--滑块组件-->
 <view class="content">
 	<swiper class="swiper-item" indicator-dots="true">
-		<view wx:for="{{index}}">
-			<swiper-item>
+		<view>
+			<swiper-item wx:for="{{userselectbool}}" wx:for-item="selectitem" wx:for-index="selectindex">
 				<text class="tips">您选择的答案</text><!--用户选择的答案-->
-				<view class='question-result'>【{{userselect[item-1].select}}】</view>
+				<view class='question-result'>【{{userselect[selectindex].select}}】</view>
 				<!--题目详情-->
-				<view class='question-title'>{{questiondatas[item-1].title}}</view>
+				<view class='question-title'>{{questiondatas[selectindex].title}}</view>
 				<!--历史选项-->
-				<radio-group bindchange='radioChange'>
+				<radio-group bindchange='radioChange' >
 					<label class="radio" >
-						<radio value="A" checked="true"  color="#FF3030"></radio><text class="select_item">{{questiondatas[item-1].optionA}}</text>
+						<radio value="A" checked="{{selectitem[0]}}" disabled="true"></radio><text class="select_item">{{questiondatas[selectindex].optionA}}</text>
 					</label>
 					<label class="radio">
-						<radio value="B" disabled="true"></radio><text class="select_item">{{questiondatas[item-1].optionB}}</text>
+						<radio value="B" checked="{{selectitem[1]}}" disabled="true"></radio><text class="select_item">{{questiondatas[selectindex].optionB}}</text>
 					</label>
 					<label class="radio">
-						<radio value="C" disabled="true"></radio><text class="select_item">{{questiondatas[item-1].optionC}}</text>
+						<radio value="C" checked="{{selectitem[2]}}" disabled="true"></radio><text class="select_item">{{questiondatas[selectindex].optionC}}</text>
 					</label>
 					<label class="radio">
-						<radio value="D" disabled="true"></radio><text class="select_item">{{questiondatas[item-1].optionD}}</text>
+						<radio value="D" checked="{{selectitem[3]}}" disabled="true"></radio><text class="select_item">{{questiondatas[selectindex].optionD}}</text>
 					</label>
 				</radio-group>
         <!--正确答案-->
 				<view>
           <text class="tips">正确答案：</text>
-					<text class='right-answer'>【{{questiondatas[item-1].answer}}】</text>
+					<text class='right-answer'>【{{questiondatas[selectindex].answer}}】</text>
 				</view>
 				<!--解释-->
 				<view>
 					<text class="tips">解释</text>
-					<text class="radio">{{questiondatas[item-1].explain}}</text>
+					<text class="radio">{{questiondatas[selectindex].explain}}</text>
 				</view>
 			</swiper-item>
 		</view>
