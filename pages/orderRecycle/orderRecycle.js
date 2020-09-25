@@ -1,4 +1,4 @@
-// pages/catalog/catalog.js
+// pages/orderRecycle/orderRecycle.js
 Page({
 
   /**
@@ -26,7 +26,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    // if(wx.canIUse('hideHomeButton')){
+    //   wx.hideHomeButton()
+    //   }
   },
 
   /**
@@ -62,6 +64,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
+  }
 })

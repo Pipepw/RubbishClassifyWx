@@ -38,4 +38,4 @@
 	</swiper>
 </view>
 <!--返回开始答题页面-->
-<button bindtap="exitQuestion">退出</button>
+<!-- <button bindtap="exitQuestion">退出</button> -->

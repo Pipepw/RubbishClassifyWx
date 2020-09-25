@@ -18,7 +18,10 @@
     "pages/question/question",
     "pages/result/questionresult",
     "pages/questiondetail/questiondetail",
-    "pages/camera/camera"
+    "pages/camera/camera",
+    "pages/orderRecycle/orderRecycle",
+    "pages/doorRecycle/doorRecycle",
+    "pages/trading/trading"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",
@@ -44,7 +47,7 @@
         "pagePath": "pages/catalog/catalog",
         "iconPath": "static/images/category.png",
         "selectedIconPath": "static/images/category@selected.png",
-        "text": "答题"
+        "text": "新闻资讯"
       },
       {
         "pagePath": "pages/ucenter/index/index",

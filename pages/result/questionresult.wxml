@@ -1,4 +1,5 @@
 <!--pages/result/questionresult.wxml-->
+<view class="border">
 <view class="explain">
   <text>恭喜您，在本次答题中\n</text>
   <text>答对题数为</text>
@@ -6,8 +7,10 @@
   <text>获得积分为</text>
   <text class="number">{{goal*20}}</text>
 </view>
+</view>
 <image class="logo" src="/static/icon/earth1.png"></image>
 <view class="content">
-  <button bindtap="queryResult">查看答题情况</button>
-  <button bindtap="exit">退出</button>
+  <view class="button_image" bindtap="queryResult" src="http://106.13.235.119:8080/icon/blue_button.png">查看答题情况</view>
+  <!-- <button bindtap="exit">退出</button> -->
 </view>
+

@@ -2,33 +2,54 @@
 page{
   /*弹性布局*/
   display: flex;
-  flex-direction: column;/*布局元素排列方向*/
-  align-items: center;/*垂直居中*/
+  flex-direction: column;
+  /*布局元素排列方向*/
+  align-items: center;
+  /*垂直居中*/
+  
 }
 
 .logo{
-  width: 400rpx;
-  height: 400rpx;
-
+  width: 250rpx;
+  height: 250rpx;
+  margin-left: -200rpx;
   align-items: center;
 }
 
 .number{
   font-size: 45rpx;
-  color: blue;
+  color: red;
 }
 text{
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size: 40rpx;
-  margin-top: 20rpx;
+  font-size: 30rpx;
+  
   color: gray;
 }
 
 
-button{
+.button_image{
   margin-top: 50rpx;
   height: 80rpx;
-  width: 400rpx;
+  width: 200rpx;
+  color: white;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+  background-image: url("http://106.13.235.119:8080/icon/blue_button.png");
+}
+.border{
+  margin-top: 20rpx;
+  height: 400rpx;
+  width: 500rpx;
+  /*图片自适应设置*/
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  -moz-background-size:100% 100%;
+  background-image: url("http://106.13.235.119:8080/icon/气泡.png"); 
+}
+.explain{
+  margin-top: 100rpx;
 }

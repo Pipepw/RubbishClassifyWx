@@ -1,2 +1,2 @@
 <!--pages/catalog/catalog.wxml-->
-<button class="start_question" bindtap="start_question">开始答题</button>
+<web-view src="https://baijiahao.baidu.com/s?id=1610181899616978667&wfr=spider&for=pc&isFailFlag=1"></web-view>

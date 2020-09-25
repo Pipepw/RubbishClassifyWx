@@ -154,7 +154,7 @@
 
 .recycle{
   width: 50rpx;
-  height: 130rpx;
+  height: 20rpx;
   margin: 50rpx 0rpx 0rpx 0rpx; 
   line-height:15px;
   /* background: rgb(91, 240, 153); */
@@ -171,7 +171,7 @@
 
 .kitch{
   width: 50rpx;
-  height: 130rpx;
+  height: 20rpx;
   margin: 350rpx 0rpx 0rpx 0rpx; 
   line-height:15px;
   /* background: rgb(91, 240, 153); */
@@ -188,7 +188,7 @@
 
 .harmful{
   width: 50rpx;
-  height: 130rpx;
+  height: 20rpx;
   margin: 50rpx 0rpx 0rpx 0rpx; 
   line-height:15px;
   /* background: rgb(216, 68, 23); */
@@ -205,11 +205,11 @@
 
 .other{
   width: 50rpx;
-  height: 130rpx;
+  height: 20rpx;
   margin: 350rpx 0rpx 0rpx 0rpx; 
   line-height:15px;
   /* background: rgb(216, 68, 23); */
-  background: #fff;
+  /* background: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,4 +218,12 @@
 
 .other text{
   margin: 0rpx 0rpx 0rpx 15rpx;
+}
+.start_question{
+  background-image: url("http://106.13.235.119:8080/icon/时间.png");
+  color: white;
+}
+.img_label{
+  height: 50rpx;
+  width: 150rpx;
 }

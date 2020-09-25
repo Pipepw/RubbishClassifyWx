@@ -4,7 +4,7 @@ const app = getApp();
 
 Page({
   data: {
-    banner: ["../../static/images/滚动1.jpg","../../static/images/滚动2.jpg","../../static/images/滚动3.jpg"],
+    banner: ["http://106.13.235.119:8080/icon/垃圾分类从我做起.png","http://106.13.235.119:8080/icon/垃圾分类.png","http://106.13.235.119:8080/icon/爱回收.jpg"],
   },
 
   onShareAppMessage: function() {
@@ -76,4 +76,25 @@ Page({
       // }
     })
   },
+  start_question:function(){
+    //跳转到答题页面
+    wx.redirectTo({
+      url: '/pages/question/question',
+    })
+  },
+  orderRecycle:function(){
+    wx.redirectTo({
+      url: '/pages/orderRecycle/orderRecycle',
+    })
+  },
+  trading:function(){
+    wx.redirectTo({
+      url: '/pages/trading/trading',
+    })
+  },
+  doorRecycle:function(){
+    wx.redirectTo({
+      url: '/pages/doorRecycle/doorRecycle',
+    })
+  }
 })

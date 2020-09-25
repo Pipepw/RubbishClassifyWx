@@ -1,4 +1,4 @@
-// pages/catalog/catalog.js
+// pages/trading/trading.js
 Page({
 
   /**
@@ -62,6 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
+  }
 })

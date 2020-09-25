@@ -1,5 +1,5 @@
 <!--pages/login/login.wxml-->
-<image class="logo" src="/static/icon/见圾行事logo.png"></image>
+<image class="logo" src="http://106.13.235.119:8080/icon/见圾行事logo.png"></image>
 
 <view class="content">
 	<!--表单-->
