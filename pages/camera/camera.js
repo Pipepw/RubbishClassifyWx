@@ -6,6 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    inputHidden:true,
+    modalHidden: true,
     rubbishLabel:null,
     showModalStatus: false,
     canIUseCamera: wx.canIUse('camera'),
@@ -14,6 +16,7 @@ Page({
     isNormal: true,
     isSquare: false,
     isBack: true,
+    imageurl:null,
     album: [],
     switchingData: {},
     cameraShotingData: {},
@@ -169,6 +172,7 @@ Page({
   shotPhoto: function() {
     var thispage=this;
     //创建动画实例
+    console.log(thispage.data.modalHidden)
     var cameraShoting = wx.createAnimation({
       transformOrigin: "50% 50%",
       duration: 500,
@@ -220,18 +224,24 @@ Page({
         //上传图片
         wx.uploadFile({
           //服务器ip:106.13.235.119
-          url: 'http://106.13.235.119:8080/model/ModelLoadServlet', //这里写自己的域名
+          url: 'http://106.13.235.119:8080/model/TargetDetectionServlet', //这里写自己的域名
           filePath: imgUrl,
           name: 'file',
           success: function (result) {
-            thispage.popup.showPopup();
+            // thispage.popup.showPopup();
             console.log("返回路径：" + result.data)
             thispage.setData({
-              rubbishLabel:result.data
+              rubbishLabel:result.data,
+              imageurl:result.data
+            })
+            thispage.setData({
+              modalHidden:false
             })
           },
           fail:function(result){
-            
+            wx.showToast({
+              title: '上传服务器失败',
+            })
             console.log(imgUrl)
           }
         })
@@ -292,28 +302,35 @@ Page({
    showPopup() {
     this.popup.showPopup();
   },
- 
-  //取消事件
-  _error() {
-    console.log('你点击了取消');
-    this.popup.hidePopup();
-    wx.showToast({
-      title: '上传成功',
-      icon: 'success',
-      duration: 2000
+
+
+  /**
+   * 点击取消
+   */
+  modalCandel: function() {
+    // do something
+    this.setData({
+      inputHidden:false
     })
-    // var album = this.data.album;
-    // wx.previewImage({
-    //   current: album[album.length > 0 ? album.length -1 : 0],
-    //   urls: album
-    // });
+    console.log("你点击了取消")
   },
-  //确认事件
-  _success() {
-    console.log('你点击了确定');
-    this.popup.hidePopup();
+
+  /**
+   *  点击确认
+   */
+  modalConfirm: function() {
+    // do something
+    this.setData({
+      modalHidden: true,
+      inputHidden:true
+    })
+    console.log("你点击了确定")
   },
-  
+  click_error:function(){
+    this.setData({
+      inputHidden:true
+    })
+  }
   
 
 })

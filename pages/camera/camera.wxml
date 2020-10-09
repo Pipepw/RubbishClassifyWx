@@ -1,6 +1,21 @@
 <!--pages/virtualCamera/virtualCamera.wxml-->
 <view class="container">
-
+	<modal title="识别结果" cancel-text="识别有误？" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel" >
+    <view class="imageView">
+      <image class="image" src="{{imageurl}}" mode='aspectFit'></image>
+    </view>
+		<view class="tips" bindtap="click_error">见圾行事</view>
+		<view hidden="{{inputHidden}}">
+			<view class="top grid">
+      <label class="title col-0">垃圾名称</label>
+      <input class="input_base input_h30 col-1" name="rName" ></input>
+    </view>
+    <view class="top grid">
+      <label class="title col-0">垃圾类别</label>
+      <input class="input_base input_h30 col-1" name="mobile" ></input>
+    </view>
+		</view>
+  </modal>
 	<!-- 相机开始 -->
 	<view class="camera-box" hover-class="none" hover-stop-propagation="false">
 		<camera wx:if="{{hasCameraScope}}" class="camera-container" device-position="{{isBack ? 'back' : 'front'}}" binderror="error" animation="{{cameraShotingData}}"></camera>
@@ -19,6 +34,7 @@
 	</view>
 	<!-- 相机结束 -->
 
+	
 	<!-- 选择相机类型开始 -->
 	<view class="camera-type" animation="{{typeSwitchingData}}">
 		<text class="{{isSquare ? 'camera-text active' : 'camera-text'}}" bindtap="switchType" data-camera-type="square">正方形</text>

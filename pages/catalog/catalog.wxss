@@ -4,3 +4,34 @@ button{
   background-color: #00ccff;
   margin-top: 20rpx;
 }
+.list{
+  width: 100%;
+  height: 200rpx;
+  padding-bottom: 5rpx;
+  /* 水平布局 */
+  display: flex; 
+  flex-direction: row; 
+}
+
+.icon_image{
+  margin-left: 20rpx;
+  width: 150rpx;
+  height: 100%;
+}
+.title{
+  font-size: 45rpx;
+  margin-left: 20rpx;
+  font-weight: 900;
+}
+.news{
+  font-size: 35rpx;
+  color: gray;
+  margin-left: 20rpx;
+}
+.line{
+  margin: 0 auto;
+  height: 1px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: gray;
+}

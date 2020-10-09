@@ -63,5 +63,10 @@ Page({
   onShareAppMessage: function () {
 
   },
+  click_item:function(){
+    wx.showToast({
+      title: '你点击了item',
+    })
+  }
 
 })

@@ -1,2 +1,15 @@
 <!--pages/catalog/catalog.wxml-->
-<web-view src="https://baijiahao.baidu.com/s?id=1610181899616978667&wfr=spider&for=pc&isFailFlag=1"></web-view>
+<view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+      <view class="list" bindtap="click_item">
+        <image class="icon_image" mode="aspectFill" src="http://106.13.235.119:8080/icon/垃圾分类从我做起.png"></image>
+        <view>
+          <view class="title">
+          新闻标题
+          </view>
+          <view class="news">
+            新闻简介
+          </view>
+        </view>
+        <view class="line"></view>
+  </view>
+</view>
