@@ -5,6 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
+    dataList:[
+      {
+        goods_id:1,
+        goods_title:'一加七pro',
+        goods_img:'http://106.13.235.119:8080/icon/phone.jpg',
+        goods_xiaoliang:'10',
+        goods_price:'2160'
+      },{
+        goods_id:1,
+        goods_title:'商品标题2',
+        goods_img:'http://106.13.235.119:8080/icon/垃圾分类.png',
+        goods_xiaoliang:'0',
+        goods_price:'70'
+      }, {
+        goods_id: 1,
+        goods_title: '商品标题3',
+        goods_img: 'http://106.13.235.119:8080/icon/垃圾分类.png',
+        goods_xiaoliang: '0',
+        goods_price: '80'
+      }, {
+        goods_id: 1,
+        goods_title: '商品标题4',
+        goods_img: 'http://106.13.235.119:8080/icon/垃圾分类.png',
+        goods_xiaoliang: '0',
+        goods_price: '90'
+      }, {
+        goods_id: 1,
+        goods_title: '商品标题5',
+        goods_img: 'http://106.13.235.119:8080/icon/垃圾分类.png',
+        goods_xiaoliang: '0',
+        goods_price: '110'
+      }
+    ],
 
   },
 

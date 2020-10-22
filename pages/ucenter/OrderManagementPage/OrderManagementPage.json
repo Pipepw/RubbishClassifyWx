@@ -1,7 +1,7 @@
 {
-  "navigationBarTitleText": "订单管理",
+  "navigationBarTitleText": "预约回收",
   "enablePullDownRefresh": true,
-  "navigationBarBackgroundColor": "#405f80",
+  "navigationBarBackgroundColor": "#00ccff",
   "navigationBarTextStyle":"white",
   "backgroundColor": "#708090"
 }

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#00ccff",
+  "navigationBarTitleText": "上门回收",
+  "navigationBarTextStyle":"white"
 }

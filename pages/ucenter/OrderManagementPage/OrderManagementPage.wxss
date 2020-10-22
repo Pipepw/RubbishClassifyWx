@@ -125,3 +125,14 @@
   height: 60rpx;
   background: #708090;
 }
+.addImageView{
+  display: flex;
+  justify-content: center;
+}
+.addImage{
+  width: 120rpx;
+  height: 120rpx;
+  position:fixed; 
+  bottom:0; 
+  margin-bottom: 20rpx;
+}

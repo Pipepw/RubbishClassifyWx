@@ -1,1 +1,97 @@
 /* pages/doorRecycle/doorRecycle.wxss */
+.content{
+  width: 100%;
+  height: 100%;
+}
+
+.addImageView{
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+.addTips{
+  position:fixed; 
+  bottom:0; 
+  color: rgba(0, 0, 255, 0.692);
+}
+.addImage{
+  width: 120rpx;
+  height: 120rpx;
+  position:fixed; 
+  bottom:0; 
+  margin-bottom: 40rpx;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  /* height: 400rpx; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: solid 1px #ababab;
+  border-bottom: solid 1px #ababab;
+}
+
+.new-author-date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.new-author {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.new-date {
+  margin-left: 10rpx;
+  color: #ababab;
+  font-size: 25rpx;
+}
+
+.new-info {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.new-info-tile {
+  margin-left: 10rpx;
+  font-weight: 600;
+}
+
+.new-info-img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.new-info-summary {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  line-height: 44rpx;
+  font-size: 28rpx;
+  color: #666;
+  letter-spacing: 3rpx;
+}
+
+.new-img-num {
+  margin-bottom: 10px;
+}
+
+.new-img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+}
+
+.new-num {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+button{
+  color: #fff;
+}

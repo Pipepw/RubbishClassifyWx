@@ -18,7 +18,7 @@
     /*要从整体解决排布的问题是最好的方案*/ 
     width: 100%;
     height: 400rpx;
-    background: #708090;
+    background: #708b90;
 }
 
 .firstimagestyle{

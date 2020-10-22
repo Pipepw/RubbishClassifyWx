@@ -38,7 +38,7 @@
                 <image src='/static/images/ucenter/2.png' class='thirdimagestyle'></image>
             </view>
         </view>
-        <view class='lineviewtwo'></view>
+        <!-- <view class='lineviewtwo'></view>
         <view class='thirdlayout' bindtap="bindViewTap">
             <view class='thirdlayout'>
                 <image class='secondimagestyle' src='/static/images/ucenter/7.png'></image>
@@ -47,7 +47,7 @@
             <view class='fourthlayout' >
                 <image src='/static/images/ucenter/2.png' class='thirdimagestyle'></image>
             </view>
-        </view>
+        </view> -->
         <view class='lineviewtwo'></view>
         <view class='thirdlayout'  bindtap="onShareTap">
             <view class='thirdlayout'>

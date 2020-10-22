@@ -15,7 +15,7 @@
             <view class='firstlayoutitemfour'>
                 <text class='secondfondstyle'>¥ {{price}}</text>
                 <view class='firstlayoutitemfouritem' >
-                    <text catchtap="showToast">确认收货</text>
+                    <text class='textorder' catchtap="showToast">我要预约</text>
                 </view>
             </view>
         </view>

@@ -45,5 +45,8 @@
         </view>
     </block>
     </scroll-view>
-   
+    <view class="addImageView">
+    <image class="addImage" src="http://106.13.235.119:8080/icon/add.png"></image>
+    <!-- <text class="addTips">我要发布</text> -->
+  </view>
 </view>

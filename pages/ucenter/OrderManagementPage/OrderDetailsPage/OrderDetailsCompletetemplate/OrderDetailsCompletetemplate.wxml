@@ -1,3 +1,4 @@
+<!-- 订单详情页面 -->
 <template name="templatetwo">
 <view class='container'>
     <swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">

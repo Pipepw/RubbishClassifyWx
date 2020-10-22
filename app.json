@@ -21,7 +21,8 @@
     "pages/camera/camera",
     "pages/orderRecycle/orderRecycle",
     "pages/doorRecycle/doorRecycle",
-    "pages/trading/trading"
+    "pages/trading/trading",
+    "pages/utilpage/share/share"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",

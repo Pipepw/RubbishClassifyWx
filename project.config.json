@@ -19,7 +19,7 @@
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
-    "useApiHook": false,
+    "useApiHook": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -372,6 +372,33 @@
           "name": "新闻资讯",
           "pathName": "pages/catalog/catalog",
           "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "上门回收",
+          "pathName": "pages/doorRecycle/doorRecycle",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 51,
+          "name": "二手交易",
+          "pathName": "pages/trading/trading",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "共享界面",
+          "pathName": "pages/utilpage/share/share",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "预约回收",
+          "pathName": "pages/ucenter/OrderManagementPage/OrderManagementPage",
           "scene": null
         }
       ]

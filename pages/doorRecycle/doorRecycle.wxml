@@ -1,2 +1,29 @@
 <!--pages/doorRecycle/doorRecycle.wxml-->
-<image src="http://106.13.235.119:8080/icon/敬请期待.png"></image>
+<view class="content">
+  <view wx:for="{{[1, 2, 3, 4]}}" wx:for-item="i">
+ <view class="wrap">
+<view class="new-author-date">
+  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" class="new-author"></image>
+  <text class="new-date">垃圾小王子</text>
+</view>
+
+<view class="new-info">
+  <text class="new-info-tile">废纸箱</text>
+  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" class="new-info-img"></image>
+  <text class="new-info-summary">硬纸板</text>
+</view>
+
+<view class="new-img-num">
+  <image src="http://106.13.235.119:8080/icon/want.png" class="new-img"></image>
+  <text class="new-num"></text>
+  <image src="http://106.13.235.119:8080/icon/look.png" class="new-img"></image>
+  <text class="new-num">96</text>
+  <button>我想要</button>
+</view>
+ </view>
+</view>
+  <view class="addImageView">
+    <image class="addImage" src="http://106.13.235.119:8080/icon/add.png"></image>
+    <!-- <text class="addTips">我要发布</text> -->
+  </view>
+</view>

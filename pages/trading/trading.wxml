@@ -1,2 +1,23 @@
-<!--pages/trading/trading.wxml-->
-<image src="http://106.13.235.119:8080/icon/敬请期待.png"></image>
+<view class="content">
+<view class='list'>
+  <block wx:for='{{dataList}}' wx:key='list' wx:for-item="item">
+  <view class="list_item">
+      <navigator url='details?id={{item.goods_id}}'>
+      <view class='img'>
+        <image src="{{imghref}}{{item.goods_img}}"  mode="scaleToFill"/>
+      </view>
+      <view class='info'>
+        <view class='title'>{{item.goods_title}}</view>
+        <view class='price'>￥{{item.goods_price}}</view>
+        <view class='num'>{{item.goods_xiaoliang}}人想要</view>
+      </view>
+       </navigator>
+      <view class='clear'></view>
+  </view>
+  </block>
+</view>
+<view class="addImageView">
+    <image class="addImage" src="http://106.13.235.119:8080/icon/add.png"></image>
+    <!-- <text class="addTips">我要发布</text> -->
+  </view>
+</view>

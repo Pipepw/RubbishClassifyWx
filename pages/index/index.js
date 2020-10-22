@@ -84,7 +84,7 @@ Page({
   },
   orderRecycle:function(){
     wx.redirectTo({
-      url: '/pages/orderRecycle/orderRecycle',
+      url: '/pages/ucenter/OrderManagementPage/OrderManagementPage'
     })
   },
   trading:function(){
@@ -95,6 +95,11 @@ Page({
   doorRecycle:function(){
     wx.redirectTo({
       url: '/pages/doorRecycle/doorRecycle',
+    })
+  },
+  showinfo:function(){
+    wx.redirectTo({
+      url: '/pages/utilpage/share/share',
     })
   }
 })

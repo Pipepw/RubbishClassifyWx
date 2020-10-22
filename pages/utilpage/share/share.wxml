@@ -1,0 +1,20 @@
+<!--pages/post/post-detail/post-detail.wxml-->
+<!--先静后动，先样式再数据-->
+<view class="detail-container">
+  <image class="head-image" src="/images/post/vr.png"></image>
+  <view class="author-date">
+    <image class="avatar" src="/images/avatar/2.png"></image>
+    <text class="author">迪丽热巴</text>
+    <text class="const-text">发表于</text>
+    <text class="date">三天前</text>
+  </view>
+  <text class="title">迪丽热巴（Dilraba）</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="/images/icon/collection.png"></image>
+      <image class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">迪丽热巴（Dilraba），1992年6月3日出生于新疆乌鲁木齐市，中国内地影视女演员、歌手，毕业于上海戏剧学院。</text>
+</view>

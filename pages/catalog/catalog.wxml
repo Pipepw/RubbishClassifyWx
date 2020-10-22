@@ -1,15 +1,22 @@
 <!--pages/catalog/catalog.wxml-->
 <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
-      <view class="list" bindtap="click_item">
-        <image class="icon_image" mode="aspectFill" src="http://106.13.235.119:8080/icon/垃圾分类从我做起.png"></image>
-        <view>
-          <view class="title">
-          新闻标题
-          </view>
-          <view class="news">
-            新闻简介
-          </view>
-        </view>
-        <view class="line"></view>
-  </view>
+  <view class="wrap">
+<view class="new-author-date">
+  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" class="new-author"></image>
+  <text class="new-date">媒体名称</text>
+</view>
+
+<view class="new-info">
+  <text class="new-info-tile">新闻标题</text>
+  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" class="new-info-img"></image>
+  <text class="new-info-summary">新闻简介</text>
+</view>
+
+<view class="new-img-num">
+  <image src="http://106.13.235.119:8080/icon/点赞.png" class="new-img"></image>
+  <text class="new-num">88</text>
+  <image src="http://106.13.235.119:8080/icon/look.png" mode="aspectFit" class="new-img"></image>
+  <text class="new-num">96</text>
+</view>
+</view>
 </view>

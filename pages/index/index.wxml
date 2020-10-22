@@ -24,7 +24,7 @@
 		<view class="button">
 			<view>
 				<view class="recycle">
-					<image class="img_label" src="http://106.13.235.119:8080/icon/可回收物.jpg"></image>
+					<image class="img_label" bindtap="showinfo" src="http://106.13.235.119:8080/icon/可回收物.jpg"></image>
 				</view>
 				<view class="kitch">
 					<image class="img_label" src="http://106.13.235.119:8080/icon/厨房垃圾.jpg"></image>
