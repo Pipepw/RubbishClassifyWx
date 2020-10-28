@@ -10,7 +10,7 @@
 </view>
 <image class="logo" src="/static/icon/earth1.png"></image>
 <view class="content">
-  <view class="button_image" bindtap="queryResult" src="http://106.13.235.119:8080/icon/blue_button.png">查看答题情况</view>
+  <button class="button_image" bindtap="queryResult" >查看详情</button>
   <!-- <button bindtap="exit">退出</button> -->
 </view>
 

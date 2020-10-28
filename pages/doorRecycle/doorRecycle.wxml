@@ -1,24 +1,24 @@
 <!--pages/doorRecycle/doorRecycle.wxml-->
 <view class="content">
-  <view wx:for="{{[1, 2, 3, 4]}}" wx:for-item="i">
+  <view wx:for="{{[0, 1]}}" wx:for-item="i">
  <view class="wrap">
 <view class="new-author-date">
-  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" class="new-author"></image>
-  <text class="new-date">垃圾小王子</text>
+  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" mode="aspectFit" class="new-author"></image>
+  <text class="new-date">{{wastelist[i].author}}</text>
 </view>
 
 <view class="new-info">
-  <text class="new-info-tile">废纸箱</text>
-  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" class="new-info-img"></image>
-  <text class="new-info-summary">硬纸板</text>
+  <text class="new-info-tile">{{wastelist[i].name}}</text>
+  <image src="{{wastelist[i].url}}" mode="aspectFit" class="new-info-img"></image>
+  <text class="new-info-summary">{{wastelist[i].tips}}</text>
 </view>
 
 <view class="new-img-num">
-  <image src="http://106.13.235.119:8080/icon/want.png" class="new-img"></image>
+  <image src="http://106.13.235.119:8080/icon/want.png" mode="aspectFit" class="new-img"></image>
   <text class="new-num"></text>
-  <image src="http://106.13.235.119:8080/icon/look.png" class="new-img"></image>
-  <text class="new-num">96</text>
-  <button>我想要</button>
+  <image src="http://106.13.235.119:8080/icon/look.png" mode="aspectFit" class="new-img"></image>
+  <text class="new-num">{{wastelist[i].look}}</text>
+  <button bindtap="orderbtn">预约</button>
 </view>
  </view>
 </view>

@@ -1,15 +1,16 @@
 <!--pages/catalog/catalog.wxml-->
-<view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+<view wx:for="{{[0, 1, 2]}}" wx:for-item="i">
+  <navigator url="../utilpage/newsdetail/newsdetail?id={{i}}">
   <view class="wrap">
 <view class="new-author-date">
-  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" class="new-author"></image>
-  <text class="new-date">媒体名称</text>
+  <image src="{{news[i].icon}}" class="new-author"></image>
+  <text class="new-date">{{news[i].author}}</text>
 </view>
 
 <view class="new-info">
-  <text class="new-info-tile">新闻标题</text>
-  <image src="http://106.13.235.119:8080/icon/垃圾分类.png" class="new-info-img"></image>
-  <text class="new-info-summary">新闻简介</text>
+  <text class="new-info-tile">{{news[i].title}}</text>
+  <image src="{{news[i].url}}" class="new-info-img"></image>
+  <text class="new-info-summary">{{news[i].tips}}</text>
 </view>
 
 <view class="new-img-num">
@@ -19,4 +20,5 @@
   <text class="new-num">96</text>
 </view>
 </view>
+</navigator>
 </view>

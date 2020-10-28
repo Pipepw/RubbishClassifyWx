@@ -22,7 +22,9 @@
     "pages/orderRecycle/orderRecycle",
     "pages/doorRecycle/doorRecycle",
     "pages/trading/trading",
-    "pages/utilpage/share/share"
+    "pages/trading/detail/detail",
+    "pages/utilpage/share/share",
+    "pages/utilpage/newsdetail/newsdetail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",

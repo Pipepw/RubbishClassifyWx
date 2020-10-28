@@ -72,7 +72,7 @@ Page({
    */
   onReady: function () {
     //获得popup组件
-    this.popup = this.selectComponent("#popup");
+    //this.popup = this.selectComponent("#popup");
   },
 
   /**

@@ -1,0 +1,23 @@
+<!--pages/utilpage/newsdetail/newsdetail.wxml-->
+<!--pages/post/post-detail/post-detail.wxml-->
+<!--先静后动，先样式再数据-->
+<view class="detail-container">
+  <image class="head-image" src="{{news[index].url}}"></image>
+  <view class="author-date">
+    <!-- 头像 -->
+    <image class="avatar" src="{{news[index].icon}}"></image>
+    <text class="author">{{news[index].author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="date">{{news[index].date}}</text>
+  </view> 
+  <text class="title">{{news[index].title}}</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="http://106.13.235.119:8080/icon/share.png"></image>
+      <image class="share-img" src="http://106.13.235.119:8080/icon/收藏.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">{{news[index].article}}</text>
+</view>
+

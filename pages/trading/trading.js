@@ -1,4 +1,5 @@
 // pages/trading/trading.js
+// var goods=require("../../../dates/news.js")
 Page({
 
   /**
@@ -8,34 +9,22 @@ Page({
     dataList:[
       {
         goods_id:1,
-        goods_title:'一加七pro',
+        goods_title:'一加七',
         goods_img:'http://106.13.235.119:8080/icon/phone.jpg',
         goods_xiaoliang:'10',
         goods_price:'2160'
       },{
-        goods_id:1,
-        goods_title:'商品标题2',
-        goods_img:'http://106.13.235.119:8080/icon/垃圾分类.png',
-        goods_xiaoliang:'0',
-        goods_price:'70'
+        goods_id:2,
+        goods_title:'计算机网络（谢希仁）',
+        goods_img:'http://106.13.235.119:8080/icon/book.jpg',
+        goods_xiaoliang:'2',
+        goods_price:'36'
       }, {
-        goods_id: 1,
-        goods_title: '商品标题3',
-        goods_img: 'http://106.13.235.119:8080/icon/垃圾分类.png',
-        goods_xiaoliang: '0',
-        goods_price: '80'
-      }, {
-        goods_id: 1,
-        goods_title: '商品标题4',
-        goods_img: 'http://106.13.235.119:8080/icon/垃圾分类.png',
-        goods_xiaoliang: '0',
-        goods_price: '90'
-      }, {
-        goods_id: 1,
-        goods_title: '商品标题5',
-        goods_img: 'http://106.13.235.119:8080/icon/垃圾分类.png',
-        goods_xiaoliang: '0',
-        goods_price: '110'
+        goods_id: 3,
+        goods_title: '鸟叔的Linux私房菜',
+        goods_img: 'http://106.13.235.119:8080/icon/osbook.jpg',
+        goods_xiaoliang: '11',
+        goods_price: '56'
       }
     ],
 

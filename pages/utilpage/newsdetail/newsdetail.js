@@ -1,12 +1,12 @@
-// pages/doorRecycle/doorRecycle.js
-var waste=require("../../dates/waste.js")
+// pages/utilpage/newsdetail/newsdetail.js
+var newslist=require("../../../dates/news.js")
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    wastelist:[]
+    news:[],
+    index:0
   },
 
   /**
@@ -14,8 +14,10 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      wastelist:waste.wasteJson
+      news:newslist.newsJson,
+      index:options.id
     })
+    console.log(this.data.news)
   },
 
   /**
@@ -65,10 +67,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  orderbtn:function(){
-    wx.showToast({
-      title: '预约成功',
-    })
   }
 })

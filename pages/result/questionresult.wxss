@@ -1,6 +1,8 @@
 /* pages/result/questionresult.wxss */
 page{
   /*弹性布局*/
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   /*布局元素排列方向*/
@@ -30,16 +32,16 @@ text{
 }
 
 
-.button_image{
+/* .button_image{
   margin-top: 50rpx;
-  height: 80rpx;
-  width: 200rpx;
+   height: 80rpx;
+   width: 200rpx;
+  /* 
   color: white;
   background-repeat:no-repeat;
   background-size:100% 100%;
-  -moz-background-size:100% 100%;
-  background-image: url("http://106.13.235.119:8080/icon/blue_button.png");
-}
+  -moz-background-size:100% 100%;  */
+
 .border{
   margin-top: 20rpx;
   height: 400rpx;
@@ -52,4 +54,13 @@ text{
 }
 .explain{
   margin-top: 100rpx;
+}
+.content{
+  width: 100%;
+}
+button{
+  width: 90%;
+  background-color: #00ccff;
+  color:white;
+  margin-top: 20rpx;
 }

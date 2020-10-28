@@ -19,7 +19,8 @@
 			<text class="txt">垃圾搜索栏</text>
 		</navigator>
 	</view>
-	<button class="start_question" bindtap="start_question">闯关答题</button>
+	<!-- <navigator url="../question/question">
+	<button class="start_question" bindtap="start_question">闯关答题</button></navigator> -->
 	<view class="choice">
 		<view class="button">
 			<view>
@@ -27,17 +28,19 @@
 					<image class="img_label" bindtap="showinfo" src="http://106.13.235.119:8080/icon/可回收物.jpg"></image>
 				</view>
 				<view class="kitch">
-					<image class="img_label" src="http://106.13.235.119:8080/icon/厨房垃圾.jpg"></image>
+					<image class="img_label" bindtap="showchufang" src="http://106.13.235.119:8080/icon/厨房垃圾.jpg"></image>
 				</view>
 			</view>
 		</view>
 		<view class="choice1">
+			<navigator url="../question/question">
 			<view class="order" bindtap="orderRecycle">
 				<view id="orderImg">
-					<image src='http://106.13.235.119:8080/icon/时间.png'></image>
+					<image src='http://106.13.235.119:8080/icon/答题活动.png'></image>
 				</view>
-				<view id="photoText">预约回收</view>
+				<view id="photoText">闯关答题</view>
 			</view>
+		</navigator>
 			<view class="photo" bindtap="startCamera">
 				<view id="photoImg">
 					<image src='http://106.13.235.119:8080/icon/相机.png'></image>
@@ -46,26 +49,30 @@
 			</view>
 		</view>
 		<view class="choice2" bindtap="trading">
+			<navigator url="../trading/trading">
 			<view class="used">
 				<view id="usedImg" >
 					<image src='http://106.13.235.119:8080/icon/移动交易.png'></image>
 				</view>
 				<view id="usedText">二手交易</view>
 			</view>
+		</navigator>
+			<navigator url="../doorRecycle/doorRecycle">
 			<view class="upper" bindtap="doorRecycle">
 				<view id="upperImg">
 					<image src='http://106.13.235.119:8080/icon/上门回收.png'></image>
 				</view>
 				<view id="upperText">上门回收</view>
 			</view>
+		</navigator>
 		</view>
 		<view class="button">
 			<view>
 				<view class="harmful">
-					<image class="img_label" src="http://106.13.235.119:8080/icon/有害垃圾.jpg"></image>
+					<image class="img_label" bindtap="showharm" src="http://106.13.235.119:8080/icon/有害垃圾.jpg"></image>
 				</view>
 				<view class="other">
-					<image class="img_label" src="http://106.13.235.119:8080/icon/其他垃圾.jpg"></image>
+					<image class="img_label" bindtap="showother" src="http://106.13.235.119:8080/icon/其他垃圾.jpg"></image>
 				</view>
 			</view>
 		</view>

@@ -399,6 +399,13 @@
           "id": -1,
           "name": "预约回收",
           "pathName": "pages/ucenter/OrderManagementPage/OrderManagementPage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "新闻详情",
+          "pathName": "pages/utilpage/newsdetail/newsdetail",
           "scene": null
         }
       ]
